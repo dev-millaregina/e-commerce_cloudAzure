@@ -1,2 +1,12 @@
 # Arquivos de configuração local
 .env
+
+# Ambientes Virtuais
+venv/
+.venv/
+env/
+
+# Cache do Python
+**/__pycache__/
+*.py[cod]
+*$py.class
