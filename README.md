@@ -21,11 +21,11 @@ Este projeto foi desenvolvido durante o curso **Microsoft Azure Cloud Native 202
 
 ## Screenshots do Sistema
 
-### Tela de Cadastro de Produtos
-<img src="img/cadastroProdutos.png" width="80%" />
+#### Tela de Cadastro de Produtos
+<img src="img/cadastroProdutos.png" width="70%" />
 
-### Tela de Listagem de Produtos
-<img src="img/listagemProdutos.png" width="80%" />
+#### Tela de Listagem de Produtos
+<img src="img/listagemProdutos.png" width="70%" />
 
 ## ▶️ Como Rodar o Projeto
 
