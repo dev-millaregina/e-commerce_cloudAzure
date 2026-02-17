@@ -1,0 +1,90 @@
+Serviços de Computação do Azure
+
+=> a computação do Azure é um serviço sob demanda que fornece recursos de computação,
+   como discos,processadores, memoria, redes e sistemas operacionais
+
+EXEMPLO: - Máquinas Virtuais (VMs)
+         - Aplicativos + serviços
+         - Contêiners + instâncias 
+         - Serviços de Kubernetes do Azure (AKS)
+         - Area de Trabalho Virtual
+
+Redundancia de Armazenamento
+
+=> LRS (armazenamento c/ redundância local): 
+    - datacenter individual na região primaria + duração 11 noves => 99,999999999%
+=> ZRS (armazenamento c/ redundância de zona): 
+    -três zonas de disponibilidade na região primaria + duração 12 noves
+=> GRS (armazenamento c/ redundância geográfica): 
+    - datacenter único no primério e região secundaria + duração 16 noves
+=> GZRS (armazenamento c/ redundância de zona geográfica): 
+    - 3 zonas de disponibilidade na região primaria e um único datacenter na 2º região
+
+Serivços de Armazenamento do Azure
+
+=> 📦 Blob (Azure Blob Storage): 
+        - Serve para: guardar arquivos grandes e não estruturados (fotos, vídeos, PDFs, Backups de arquivos)
+        - Exemplo: Um site que permite enviar fotos salva essas imagens no Blob.
+
+=> 💽 Disco (Azure Disk Storage):
+        - Serve para: funcionar como um “HD” de um computador virtual
+        - Exemplo: Uma máquina virtual rodando um servidor precisa de um Disco para armazenar o Windows/Linux e os dados do sistema.
+
+=> 📬 Fila (Azure Queue Storage): 
+        - Serve para: guardar mensagens para serem processadas depois
+        - Exemplo: Um usuário faz um pedido → o pedido entra numa Fila → o sistema processa depois (ex: gerar nota fiscal).
+
+=> 📁 Arquivos (Azure File Storage):
+        - Serve para: criar pastas e arquivos como se fosse um “drive de rede”
+        - Exemplos: Vários computadores acessam a mesma pasta de documentos na nuvem via Arquivos.
+
+=> 🗃️ Tabelas (Azure Table Storage):
+        - Serve para: guardar dados estruturados simples (tipo banco de dados básico, sem SQL)
+        - Exemplo: Um sistema guarda o nome e o nível do herói em uma Tabela
+
+=> 🗄️ Data Lake Storage Gen2:
+        - Pra que serve: Grandes volumes de dados para análise (Big Data).
+        - Exemplo: Usado em projetos de dados (logs, dados de sensores, históricos gigantes).
+    
+Ponto de Extremidade Público
+
+=> É basicamente o endereço (URL) que seu sistema usa para acessar o serviço no Azure.
+
+Formato geral: https://<nome-da-sua-conta>.serviço.core.windows.net
+
+Exemplo:
+    - Blobs => URL: https://meuarquivo.blob.core.windows.net
+    - Data Lake Storage Gen2 => URL:https://<storage-account-name>.dfs.core.windows.net
+    - Arquivos => URL: https://<storage-account-name>.file.core.windows.net
+    - Filas => URL: https://<storage-account-name>.queue.core.windows.net
+    - Tabelas => URL: https://<storage-account-name>.table.core.windows.net
+
+Camadas de Acesso de Armazenamento do Azure
+
+- Frequente (Hot): 
+    => Quando usar: dados acessados o tempo todo.
+    => ✔️ Acesso rápido + armazenar é mais caro + Acessar é barato
+
+- Esporádico (Cool)
+    => Quando usar: dados pouco acessados (guardar por pelo menos 30 dias).
+    => ✔️ Mais barato pra guardar + mais caro pra acessar + ideal pra “quase nunca uso”
+
+- Frio (Cold)
+    => Quando usar: dados raramente acessados (guardar por pelo menos 90 dias).
+    => ✔️ Mais barato que o Cool + acesso mais caro + pode ser um pouco mais lento
+
+- Arquivo Morto (Archive)
+    => Quando usar: dados quase nunca acessados (guardar por pelo menos 180 dias).
+    => ✔️ O mais barato pra guardar + acesso lento + reativar o acesso custa mais + pode demorar horas pra “descongelar” o arquivo
+
+📌 Regra de ouro pra prova: Quanto menos você acessa, mais barato é guardar mas mais caro fica e mais lento é para acessar.
+
+Azure Data Box
+
+=> é um equipamento físico usado para transferir grandes volumes de dados para o Azure sem depender da internet. 
+=> os dados são copiados para o dispositivo, que é devolvido para a Microsoft para envio à nuvem (Azure). 
+=> ele suporta até 80 TB, é criptografado e indicado para migrações de backups ou locais com internet lenta. 
+
+Exemplo:
+    - Uma empresa tem 50 TB de dados em um servidor local e internet muito lenta
+    - Melhor solução usar o Azure Data Box.

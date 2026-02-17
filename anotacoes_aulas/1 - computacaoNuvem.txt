@@ -1,0 +1,66 @@
+1º Aula Computação em Nuvem
+
+- é o fornecimento de serviços de computação pela internet, habilitanto inovações + rápidas e economias 
+  de escala (black friday)
+- três pilares: computação -> rede -> armazenamento
+
+=> Nuvem privada: 
+    - ambiente em nuvem da organização no datacenter, não fornece acesso aos usuários de fora
+    - as empresas são responsaveis por operar os serviços que fornecem, recursos e segurança
+    - o hardware deve ser comprado p/ inicialização, manutenção e atualizações futuras
+    - On-premise = no local ou infraestrutura local, é à prática de hospedar softwares, servidores e 
+      sistemas de TI nas instalações físicas da própria empresa
+
+=> Nuvem híbrida:
+    - combina nuvens públicas e privadas.
+    - maior flexibilidade
+    - a empresa controla a segurança, conformidade e requisitos legais
+
+=> Nuvem pública: 
+    - nenhum despesa de capital p/ escalar verticalmente
+    - os apps podem ser provisionados e desprovisionado rapidamente
+    - as organizações apenas pagam pelo que utilizam
+
+2º CapEx x OpEx
+
+=> despesas de capital (CapEx)
+    - depende de licença ou aquisição, tem um verba determinada por ano
+    - gasto c/ infraestrutura física
+    - as despesas tem um valor que reduz c/ o tempo
+
+=> despesas operacionais (OpEx)
+    - gastar c/ produtos e serviços conforme o uso
+    - ser cobrado imediatamente
+    - pagar um terceiro ou consultor por tempo determinado
+
+3º Tipos de serviço
+
+=> IaaS (Infraestrutura como serviço)
+    - crie uma infraestrutura de TI de pagamento conforme o uso alugando servidores, máquinas, armazenamento,
+    redes e SO de um provedor de nuvem
+
+=> PaaS (Plataforma como serviço)
+    - fornece um ambiente p/ criação, o teste e a implatação de aplicativos de software, sem foco no gerenciamento
+    da infraestrutura subjacente
+
+=> SaaS (software como serviço)
+    - Trello, Office e Canva são SaaS
+    - os users se conectam e usam aplicativos com base em nuvem pela internet
+
+4º Modelo de responsabilidade compartilhada
+
+    - No local = totalmente da empresa
+    - IaaS = fornecedor Azure: hosts fisicos + rede fisica + datacenter fisico
+    - PaaS = fornecedor Azure: hosts fisicos + rede fisica + datacenter fisico + SO + 
+             (compartilhada ->) controles de rede + aplicativos + infraestrutura de identidade e diretorio
+    - SaaS = fornecedor Azure: hosts fisicos + rede fisica + datacenter fisico + SO + controles de rede + 
+             aplicativos + (compartilhada ->) infraestrutura de identidade e diretorio
+
+    - sempre do cliente = informações e dados + dispositivos (moveis e pcs) + contas e identidades
+
+=> Exemplo: pizzaria
+
+    - Saas = só vai na pizzaria, pede a pizza e come, depois de pagar vai embora
+    - PaaS = pede a pizza em casa, paga a entrega e tem que lavar a louça
+    - IaaS = pizza de mercado pré-pronta, tem que colocar para assar e lavar a louça
+    - On-premise = produz a pizza, assar, come e lava a louça
