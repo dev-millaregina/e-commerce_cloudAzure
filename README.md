@@ -1,4 +1,4 @@
-# Projeto de Armazenamento de um E-Commerce na Cloud Azure
+# Projeto de Armazenamento de um E-Commerce
 
 ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
@@ -27,10 +27,10 @@ Foi o meu 1° contato prático com a plataforma Azure, além do aprendizado bás
 ## 📷 Screenshots do Sistema
 
 ### Tela de Cadastro de Produtos
-<img src="img/cadastroProdutos.png" width="50%" />
+<img src="img/cadastroProdutos.png" width="70%" />
 
 ### Tela de Listagem de Produtos
-<img src="img/listagemProdutos.png" width="50%" />
+<img src="img/listagemProdutos.png" width="70%" />
 
 ## Tecnologias Utilizadas
 
